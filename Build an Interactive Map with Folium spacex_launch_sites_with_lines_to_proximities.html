@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4f687ffdb7464bb0e21a4706e67efb55 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ardhi/Leaflet.MousePosition/src/L.Control.MousePosition.min.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4f687ffdb7464bb0e21a4706e67efb55" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4f687ffdb7464bb0e21a4706e67efb55 = L.map(
+                "map_4f687ffdb7464bb0e21a4706e67efb55",
+                {
+                    center: [29.559684888503615, -95.0830971930759],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e06ac653db77025131b231666263c210 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_e06ac653db77025131b231666263c210.addTo(map_4f687ffdb7464bb0e21a4706e67efb55);
+        
+    
+            var mouse_position_ebd0024760deb7ae69225006dc9bc210 = new L.Control.MousePosition(
+                {"emptyString": "Unavailable", "lngFirst": false, "numDigits": 5, "position": "bottomright", "prefix": "", "separator": " : "}
+            );
+            mouse_position_ebd0024760deb7ae69225006dc9bc210.options["latFormatter"] =
+                undefined;
+            mouse_position_ebd0024760deb7ae69225006dc9bc210.options["lngFormatter"] =
+                undefined;
+            map_4f687ffdb7464bb0e21a4706e67efb55.addControl(mouse_position_ebd0024760deb7ae69225006dc9bc210);
+        
+    
+            var marker_6e43a0dcb4cd9a09b37a74fd218eca25 = L.marker(
+                [28.56367, -80.57163],
+                {}
+            ).addTo(map_4f687ffdb7464bb0e21a4706e67efb55);
+        
+    
+            var icon_5ddddcdd18fcd912c83914954500c07e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6e43a0dcb4cd9a09b37a74fd218eca25.setIcon(icon_5ddddcdd18fcd912c83914954500c07e);
+        
+    
+        var popup_43d0cd9ce7938db9f257b08992746ee5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee241cbf48db4930fa08f423e271f951 = $(`<div id="html_ee241cbf48db4930fa08f423e271f951" style="width: 100.0%; height: 100.0%;">Closest Coastline Point</div>`)[0];
+                popup_43d0cd9ce7938db9f257b08992746ee5.setContent(html_ee241cbf48db4930fa08f423e271f951);
+            
+        
+
+        marker_6e43a0dcb4cd9a09b37a74fd218eca25.bindPopup(popup_43d0cd9ce7938db9f257b08992746ee5)
+        ;
+
+        
+    
+    
+            tile_layer_e06ac653db77025131b231666263c210.addTo(map_4f687ffdb7464bb0e21a4706e67efb55);
+        
+    
+            tile_layer_e06ac653db77025131b231666263c210.addTo(map_4f687ffdb7464bb0e21a4706e67efb55);
+        
+    
+            var marker_5ddc17e72ff5894948b20226ded1234e = L.marker(
+                [28.56367, -80.57163],
+                {}
+            ).addTo(map_4f687ffdb7464bb0e21a4706e67efb55);
+        
+    
+            var div_icon_7d97ff04c0907f4efb52656d919dad07 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12; color:#d35400;\"\u003e\u003cb\u003e      0.58 KM\u003c/b\u003e\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [20, 20]});
+            marker_5ddc17e72ff5894948b20226ded1234e.setIcon(div_icon_7d97ff04c0907f4efb52656d919dad07);
+        
+    
+            var poly_line_b3b24765209abf523919c430f16da854 = L.polyline(
+                [[28.56230197, -80.57735648], [28.56367, -80.57163]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4f687ffdb7464bb0e21a4706e67efb55);
+        
+    
+            var marker_fc03955c843ce455f63084d78b0ad564 = L.marker(
+                [28.56230197, -80.57735648],
+                {}
+            ).addTo(map_4f687ffdb7464bb0e21a4706e67efb55);
+        
+    
+            var icon_b02ec27d6c78eccd2c7c8d6e699eee22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fc03955c843ce455f63084d78b0ad564.setIcon(icon_b02ec27d6c78eccd2c7c8d6e699eee22);
+        
+    
+        var popup_eddf8385eed5bada52a0b23941ea111a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_360abb78d90bd1e90f1bc585cb129330 = $(`<div id="html_360abb78d90bd1e90f1bc585cb129330" style="width: 100.0%; height: 100.0%;">CCAFS LC-40</div>`)[0];
+                popup_eddf8385eed5bada52a0b23941ea111a.setContent(html_360abb78d90bd1e90f1bc585cb129330);
+            
+        
+
+        marker_fc03955c843ce455f63084d78b0ad564.bindPopup(popup_eddf8385eed5bada52a0b23941ea111a)
+        ;
+
+        
+    
+    
+            var marker_09953095829728f7bb20d544cefe7752 = L.marker(
+                [28.56367, -80.57163],
+                {}
+            ).addTo(map_4f687ffdb7464bb0e21a4706e67efb55);
+        
+    
+            var icon_0c1e9c15d71ad457a64d927540118f21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_09953095829728f7bb20d544cefe7752.setIcon(icon_0c1e9c15d71ad457a64d927540118f21);
+        
+    
+        var popup_30b4f1c2bc7b75edb9901e9bb1fc0721 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68880abffedca83b4010b5be85014351 = $(`<div id="html_68880abffedca83b4010b5be85014351" style="width: 100.0%; height: 100.0%;">Closest Coastline Point</div>`)[0];
+                popup_30b4f1c2bc7b75edb9901e9bb1fc0721.setContent(html_68880abffedca83b4010b5be85014351);
+            
+        
+
+        marker_09953095829728f7bb20d544cefe7752.bindPopup(popup_30b4f1c2bc7b75edb9901e9bb1fc0721)
+        ;
+
+        
+    
+    
+            tile_layer_e06ac653db77025131b231666263c210.addTo(map_4f687ffdb7464bb0e21a4706e67efb55);
+        
+    
+            tile_layer_e06ac653db77025131b231666263c210.addTo(map_4f687ffdb7464bb0e21a4706e67efb55);
+        
+    
+            var poly_line_0e2254a572c88e3cd63e752f03393053 = L.polyline(
+                [[28.56230197, -80.57735648], [28.3922, -80.6077]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4f687ffdb7464bb0e21a4706e67efb55);
+        
+    
+            var poly_line_89dec7b6ce63f95e4d23b72a9da9b2fe = L.polyline(
+                [[28.56230197, -80.57735648], [28.55, -80.6]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4f687ffdb7464bb0e21a4706e67efb55);
+        
+    
+            var poly_line_6b81c0092d37f39c24103116e6dbf968 = L.polyline(
+                [[28.56230197, -80.57735648], [28.52, -80.58]],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2}
+            ).addTo(map_4f687ffdb7464bb0e21a4706e67efb55);
+        
+</script>
+</html>
